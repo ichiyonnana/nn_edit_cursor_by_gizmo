@@ -64,7 +64,7 @@ class NNCURSORUTIL_OT_EditCursorByGizmoEnd(bpy.types.Operator):
     bl_description = ""
     bl_options = {'REGISTER', 'UNDO'}
 
-    restore = bpy.props.BoolProperty(default=False)
+    restore : bpy.props.BoolProperty(default=False)
 
     def execute(self, context):
         if not name in bpy.data.objects:
@@ -107,7 +107,7 @@ class NNCURSORUTIL_OT_EditCursorByGizmoToggle(bpy.types.Operator):
     bl_description = ""
     bl_options = {'REGISTER', 'UNDO'}
 
-    restore = bpy.props.BoolProperty(default=False)
+    restore : bpy.props.BoolProperty(default=False)
 
     def execute(self, context):
         # object name
